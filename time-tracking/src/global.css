@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+  --text-single-uppercase-200-regular: Inter;
+  --font-lato: Lato;
+  --font-roboto: Roboto;
+
+  /* font sizes */
+  --text-single-300-regular-size: 16px;
+  --text-single-uppercase-200-regular-size: 14px;
+  --font-size-xl: 20px;
+  --font-size-17xl: 36px;
+  --font-size-10xl: 29px;
+  --font-size-3xl: 22px;
+  --font-size-5xl: 24px;
+  --font-size-lgi: 19px;
+  --font-size-3xs: 10px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --branco: #fff;
+  --cinza: #2b2b2b;
+  --black-100: #1c1c1c;
+  --black-40: rgba(0, 0, 0, 0.4);
+  --black-5: rgba(0, 0, 0, 0.2);
+  --black-10: rgba(0, 0, 0, 0.1);
+  --preto-50: rgba(0, 0, 0, 0.5);
+  --preto: #000;
+  --color-darkslategray: #384d6c;
+  --azul-labels: #354665;
+  --color-teal: #0077EE;
+  --color-red: #ff002f;
+  --color-lightslategray: #718bae;
+  --azul: #1a205e;
+}
