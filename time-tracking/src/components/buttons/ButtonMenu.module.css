@@ -1,0 +1,28 @@
+.buttonContainer {
+    flex-direction: row;
+    display: flex;
+    height: 60px;
+    justify-content: space-around   ;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.titleButton {
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin-left: 10px;
+}
+.icon {
+    font-size: 1.2rem;
+}
+.text {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.buttonContainer:hover{
+    background-color: #2d4c86;
+    color: white;
+    border-radius: 0 35px 35px 0;
+}

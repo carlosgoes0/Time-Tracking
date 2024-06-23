@@ -1,0 +1,25 @@
+.sidebarContainer{
+    width: 15%;
+}
+
+.logo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItems{
+    display: flex;
+    flex-direction: column;
+    height: 80%;    
+    margin-top: 15%;
+}
+.buttonExit{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

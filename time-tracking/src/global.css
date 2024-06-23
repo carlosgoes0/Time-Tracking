@@ -4,11 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   /* fonts */
   --font-montserrat: Montserrat;
@@ -16,17 +11,20 @@ body {
   --font-lato: Lato;
   --font-roboto: Roboto;
 
-  /* font sizes */
-  --text-single-300-regular-size: 16px;
-  --text-single-uppercase-200-regular-size: 14px;
-  --font-size-xl: 20px;
-  --font-size-17xl: 36px;
-  --font-size-10xl: 29px;
-  --font-size-3xl: 22px;
-  --font-size-5xl: 24px;
-  --font-size-lgi: 19px;
-  --font-size-3xs: 10px;
-  --font-size-11xl: 30px;
+    /* font sizes */
+    --text-single-300-regular-size: 16px;
+    --text-single-uppercase-200-regular-size: 14px;
+    --font-size-xl: 20px;
+    --font-size-17xl: 36px;
+    --font-size-10xl: 29px;
+    --font-size-3xl: 22px;
+    --font-size-5xl: 24px;
+    --font-size-lgi: 19px;
+    --font-size-3xs: 10px;
+    --font-size-11xl: 30px;
+  
+
+
 
   /* Colors */
   --branco: #fff;
@@ -43,4 +41,10 @@ body {
   --color-red: #ff002f;
   --color-lightslategray: #718bae;
   --azul: #1a205e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: var(--font-montserrat);
 }

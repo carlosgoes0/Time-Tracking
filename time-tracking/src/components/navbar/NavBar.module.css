@@ -1,0 +1,25 @@
+
+.navbarContainer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+  }
+  .logo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .breadCrumb {
+    width: 70%;
+  }
+  
+  .iconsAndUser {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  
