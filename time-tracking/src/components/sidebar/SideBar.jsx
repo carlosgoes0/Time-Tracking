@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './SideBar.module.css';
-import LogoFapesp from '../../utils/assets/Img-Logo-FAPESP.png'
 import ButtonMenu from './../buttons/ButtonMenu'
 import ButtonMenuExit from '../buttons/ButtonMenuExit';
 import { PiUsersThree } from "react-icons/pi";
