@@ -4,8 +4,7 @@ import { MdDeleteForever } from "react-icons/md";
 import { FaRegEdit } from "react-icons/fa";
 import { MdOutlinePageview } from "react-icons/md";
 
-const RowsData = ({ id, name, onApagar, onEditar }) => {
-  const [showConfirm, setShowConfirm] = useState(true);
+const RowsData = ({ id, name, onPut, onDel }) => {
 
   return (
     <div className={styles.rowsDataContainer}>
@@ -17,8 +16,8 @@ const RowsData = ({ id, name, onApagar, onEditar }) => {
             {name}
           </div>
           <div className={styles.buttonsData}>
-          <FaRegEdit onClick={() => onEditar(id)} className={styles.pointer} size={20}/>
-          <MdDeleteForever onClick={() => onApagar(true)} className={styles.pointer} color='red' size={25}/>
+          <FaRegEdit onClick={onPut} className={styles.pointer} size={20}/>
+          <MdDeleteForever onClick={onDel} className={styles.pointer} color='red' size={25}/>
           </div>
         </div>
     </div>

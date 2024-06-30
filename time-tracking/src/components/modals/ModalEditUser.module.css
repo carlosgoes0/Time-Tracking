@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.799);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,4 +60,14 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
+}
+.submitButton {
+  background-color: #05376C;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
 }
