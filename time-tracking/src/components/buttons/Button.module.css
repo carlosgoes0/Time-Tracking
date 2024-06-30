@@ -1,31 +1,23 @@
 .buttonContainer {
     flex-direction: row;
     display: flex;
-    height: 50px;
+    height: 40px;
     margin-bottom: 10px;
     justify-content: space-around   ;
     align-items: center;
     font-size: 1.2rem;
     cursor: pointer;
+    background-color: #2d4c86;
+    width: 10%;
+    color: #ffff;
+    border-radius: 5px;
 }
 .titleButton {
-    display: flex;
     justify-content: left;
     align-items: center;
-    width: 100%;
-    margin-left: 10px;
-    font-size: 1.2rem;
-
+    display: flex;
 }
 .icon {
     font-size: 1.2rem;
 }
-.text {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.buttonContainer:hover{
-    background-color: #2d4c86;
-    color: white;
-    border-radius: 0 35px 35px 0;
-}
+

@@ -1,5 +1,45 @@
 .sectionContainer {
     display: flex;
-    flex-direction: row;
-    height: 90vh;
+    width: 85%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.listDataContainer {
+    display: flex;
+    flex-direction: column;
+    width: 85%; 
+}
+
+.listData {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 15px;
+}
+.registerUser {
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    align-items: center;
+}
+.listData::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+.listData::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.listData::-webkit-scrollbar-thumb {
+    background: #05376C;
+}
+
+.listData::-webkit-scrollbar-thumb:hover {
+    background: #007bff;
 }

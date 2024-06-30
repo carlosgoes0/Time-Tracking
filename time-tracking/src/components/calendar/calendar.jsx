@@ -8,7 +8,7 @@ function Calendar({label, name }) {
             <label>{label}</label>
             <input
                 name={name}
-                type="text"
+                type="date"
                 className={styles.inputField}
             />
         </div>

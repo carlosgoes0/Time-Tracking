@@ -5,9 +5,13 @@
     font-size: 1rem;
     justify-content: space-around;
     height: 100%;
+
 }
 .inputSearch{
-    border-radius: 5px;
+    border-radius: 50px;
     height: 50%;
-    width: 80%;
+    width: 90%;
+    border: none;
+    background-color: #dcdcdc;
+
 }

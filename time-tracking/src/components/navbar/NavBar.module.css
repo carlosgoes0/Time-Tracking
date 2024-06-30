@@ -1,17 +1,22 @@
 
 .navbarContainer {
-    width: 100vw;
-    height: 10vh;
+    height: 8vh;
     display: flex;
+    width: 100vw;
+    background-color: #f0f0f0;
+    
   }
   .logo {
     width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   .breadCrumb {
     width: 70%;
+    box-shadow: 0px 2px 0px #acacac;
+
   }
   
   .iconsAndUser {
@@ -19,6 +24,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0px 2px 0px #acacac;
   }
   
   

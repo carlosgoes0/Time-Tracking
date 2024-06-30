@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './search.module.css';
+import { IoMdSearch } from "react-icons/io";
+
 
 function Search({label, name }) {
   return (
