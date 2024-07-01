@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './ModalEditUser.module.css';
+import styles from './ModalCreateUpdateUser.module.css';
 
-const EditModal = ({ isOpen, onClose, onSubmit, user, handleInputChange, modalType }) => {
+const ModalCreateUpdateUser = ({ isOpen, onClose, onSubmit, user, handleInputChange, modalType }) => {
   if (!isOpen) return null;
 
   return (
@@ -105,4 +105,4 @@ const EditModal = ({ isOpen, onClose, onSubmit, user, handleInputChange, modalTy
   );
 };
 
-export default EditModal;
+export default ModalCreateUpdateUser;

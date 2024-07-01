@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import styles from './Section.module.css';
-import TitleSection from '../rows/user/titlesSectionUser/titleSectionUser';
-import TitlesData from '../rows/user/userTitles/userTitles';
+import styles from '../sections/SectionUser.module.css'; // Verifique se o caminho para o CSS está correto
+import TitleSectionUser from '../rows/user/titlesSectionUser/titleSectionUser';
+import TitlesDataUser from '../rows/user/userTitles/userTitles';
 import RowsData from '../rows/user/userData/userData';
-import Button from '../buttons/Button';
 import api from '../../api';
-import EditModal from '../modals/ModalEditUser';
+import ModalCreateUpdate from '../modals/user/ModalCreateUpdateUser';
 import DeleteModal from '../modals/ModalDelete';
 
-const ListComponent = () => {
+const SectionUser = () => {
   const [dataList, setDataList] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null);
-  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const [isModalCreateUpdateOpen, setIsModalCreateUpdateOpen] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [isNewUser, setIsNewUser] = useState(false);
 
@@ -32,7 +31,7 @@ const ListComponent = () => {
     const user = dataList.find(user => user.idEmployee === idEmployee);
     setSelectedUser(user);
     setIsNewUser(false);
-    setIsEditModalOpen(true);
+    setIsModalCreateUpdateOpen(true);
   };
 
   const handleDel = (idEmployee) => {
@@ -50,7 +49,7 @@ const ListComponent = () => {
     };
     setSelectedUser(newUser);
     setIsNewUser(true);
-    setIsEditModalOpen(true);
+    setIsModalCreateUpdateOpen(true);
   };
 
   const handleSaveEdit = async (user) => {
@@ -64,7 +63,7 @@ const ListComponent = () => {
         setDataList(dataList.map(item => (item.idEmployee === user.idEmployee ? updatedUser : item)));
         console.log('Usuário atualizado:', updatedUser);
       }
-      setIsEditModalOpen(false);
+      setIsModalCreateUpdateOpen(false);
       setSelectedUser(null);
     } catch (error) {
       console.error(isNewUser ? 'Erro ao cadastrar novo usuário:' : 'Erro ao atualizar usuário:', error);
@@ -84,8 +83,8 @@ const ListComponent = () => {
     }
   };
 
-  const handleCloseEditModal = () => {
-    setIsEditModalOpen(false);
+  const handleCloseModalCreateUpdate = () => {
+    setIsModalCreateUpdateOpen(false);
     setSelectedUser(null);
   };
 
@@ -104,8 +103,8 @@ const ListComponent = () => {
 
   return (
     <div className={styles.sectionContainer}>
-      <TitleSection />
-      <TitlesData />
+      <TitleSectionUser />
+      <TitlesDataUser />
       <div className={styles.listData}>
         {dataList.map((data) => (
           <RowsData 
@@ -118,12 +117,12 @@ const ListComponent = () => {
         ))}
       </div>
       <div className={styles.registerUser}>
-      <button type="submit" className={styles.submitButton} onClick={handlePost}>Cadastrar</button>
+        <button type="submit" className={styles.submitButton} onClick={handlePost}>Cadastrar</button>
       </div>
       {selectedUser && (
-        <EditModal
-          isOpen={isEditModalOpen}
-          onClose={handleCloseEditModal}
+        <ModalCreateUpdate
+          isOpen={isModalCreateUpdateOpen}
+          onClose={handleCloseModalCreateUpdate}
           user={selectedUser}
           onSubmit={handleSaveEdit}
           handleInputChange={handleInputChange}
@@ -143,4 +142,4 @@ const ListComponent = () => {
   );
 }
 
-export default ListComponent;
+export default SectionUser;

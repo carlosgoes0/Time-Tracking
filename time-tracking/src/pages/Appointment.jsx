@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Appointment.module.css';
 import NavBar from '../components/navbar/NavBar';
-import SectionContainer from '../components/section/section'
+import SectionUser from '../components/sections/sectionUser'
 import SideBar from '../components/sidebar/SideBar';
 
 
@@ -13,7 +13,7 @@ const Appointment = () => {
         <NavBar/>
         <div className={styles.sectionData}>
         <SideBar/>
-        <SectionContainer/>
+        <SectionUser/>
         </div>
         </div>
         </>
