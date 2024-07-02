@@ -19,7 +19,7 @@ const ModalCreateUpdateOccurrence = ({ isOpen, onClose, onSubmit, user, handleIn
                   value={user.idEmployee}
                   onChange={(e) => handleInputChange(e)}
                   name="typeOfOccurrence"
-                  readOnly  // readOnly para matrícula não ser editável
+                  readOnly
                 />
               </label>
               <label>
@@ -31,7 +31,6 @@ const ModalCreateUpdateOccurrence = ({ isOpen, onClose, onSubmit, user, handleIn
                   name="allowance"
                 />
               </label>
-            
               <button type="submit" className={styles.submitButton}>Salvar</button>
             </form>
           </div>

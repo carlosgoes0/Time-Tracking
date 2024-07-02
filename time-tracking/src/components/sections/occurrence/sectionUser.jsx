@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../sections/SectionUser.module.css'; // Verifique se o caminho para o CSS está correto
-import TitleSectionUser from '../rows/user/titlesSectionUser/titleSectionUser';
-import TitlesDataUser from '../rows/user/userTitles/userTitles';
-import RowsData from '../rows/user/userData/userData';
-import api from '../../api';
-import ModalCreateUpdate from '../modals/user/ModalCreateUpdateUser';
-import DeleteModal from '../modals/ModalDelete';
+import TitleSectionUser from '../../rows/user/titlesSectionUser/titleSectionUser';
+import TitlesDataUser from '../../rows/user/userTitles/userTitles';
+import RowsData from '../../rows/user/userData/userData';
+import api from '../../../api';
+import ModalCreateUpdate from '../../modals/user/ModalCreateUpdateUser';
+import DeleteModal from '../../modals/ModalDelete';
 
-const SectionUser = () => {
+const SectionOccurrence = () => {
   const [dataList, setDataList] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null);
   const [isModalCreateUpdateOpen, setIsModalCreateUpdateOpen] = useState(false);
@@ -142,4 +142,4 @@ const SectionUser = () => {
   );
 }
 
-export default SectionUser;
+export default SectionOccurrence;

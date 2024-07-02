@@ -1,0 +1,29 @@
+.rowsTitleContainer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.titleSection{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.dateRangepicker{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.search{
+    width: 20%;
+}
+
